@@ -1,0 +1,48 @@
+
+main{
+    width: 60vw;
+    margin: 0 auto;
+    color: #0D0D0D;
+}
+
+main section{
+    padding: 10rem 0;
+    
+}
+main section ul{
+    display: grid;  
+    grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+    gap: 1rem;
+}
+main section ul li{
+    background-color: #91AAF2;
+
+}
+main section ul li img{
+    height: 100%;
+    width: 100%;
+}
+main form{
+    padding: 2rem;
+    box-shadow: #F2F2F2 .195rem .195rem .26rem;
+}
+main form input, main form select{
+    width: 100%;
+    padding: 1rem 0;
+    margin-top: .5rem;
+    margin-bottom: 2rem;   
+    padding-left: .5rem 
+}
+main form input:last-child{
+    background-color: #91AAF2;
+    border: 0;
+}
+main form label{
+    color: #F2F2F2;
+}
+
+
+
+
+
+ 

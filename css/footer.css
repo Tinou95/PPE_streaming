@@ -1,0 +1,10 @@
+footer{
+    width: 60vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 6vh;
+    color: #F2F2F2;
+
+}
