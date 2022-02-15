@@ -37,3 +37,8 @@ img{
     object-fit: cover;
     vertical-align: middle;
 }
+
+.magie{
+   background-color: #fff;
+   color: red;
+}
