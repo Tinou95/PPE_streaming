@@ -47,9 +47,21 @@ main form input, main form select{
 main form input:last-child{
     background-color: #91AAF2;
     border: 0;
+    font-size: 2rem;
+    width: 50%;
+    transform: translateX(50%);
+
 }
 main form label{
     color: #0D0D0D;
+}
+
+@media screen and (max-width: 50rem) {
+
+    main{
+        width: 90vw;
+    }
+
 }
 
 
