@@ -17,12 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
     first_image.src="./asset/affiche/affiche_2.jpg";
   })
 
-  first_image.addEventListener("click", (e) =>{
-    e.preventDefault;
-
-      first_image.src="./asset/affiche/affiche_2.jpg";
-
-  })
+  
 
   
 
