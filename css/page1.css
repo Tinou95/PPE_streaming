@@ -23,7 +23,7 @@ main section p{
 
 main section ul{
     display: grid;  
-    grid-template-columns: repeat(auto-fill, minmax(15rem,1fr));
+    grid-template-columns: repeat(5,1fr);
     gap: 1rem;
 
 }
@@ -43,7 +43,7 @@ main section button{
     width: 60%;
     background-color: #91AAF2;
     color: #0D0D0D;
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 
 @media screen and (max-width: 40rem) {
@@ -57,5 +57,13 @@ main section button{
         text-align: justify;
  
     }
+
+    main section ul{
+
+        grid-template-columns: repeat(3,1fr);
+
+        
+    }
+
     
 }

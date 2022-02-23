@@ -20,11 +20,11 @@ main section h2{
 }
 main section ul{
     display: grid;  
-    grid-template-columns: repeat(auto-fill, minmax(17rem,1fr));
+    grid-template-columns: repeat(4,1fr);
     gap: 1rem;
 }
 main section ul li{
-    background-color: #91AAF2;
+    background-color: #F2F2F2;
 
 }
 main section ul li img{
@@ -60,6 +60,9 @@ main form label{
 
     main{
         width: 90vw;
+    }
+    main section ul{ 
+        grid-template-columns: repeat(2,1fr);
     }
 
 }
