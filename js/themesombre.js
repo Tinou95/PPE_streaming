@@ -13,7 +13,6 @@ image_header2.addEventListener("click", () => {
 
     } else {
         image_header2.src = src="./asset/sunny.png"
-
     }
 
     body.classList.toggle("body")

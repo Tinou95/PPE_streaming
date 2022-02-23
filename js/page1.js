@@ -17,6 +17,10 @@ document.addEventListener("DOMContentLoaded", () => {
     first_image.src="./asset/affiche/affiche_2.jpg";
   })
 
+
+
+
+
   
 
   
