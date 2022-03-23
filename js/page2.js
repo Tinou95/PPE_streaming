@@ -13,9 +13,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-    // Formulaire de contact 
 
-    let kcorpWin = document.querySelector("main p");
+
+    // Formulaire de contact 
+    let kcorpWin = document.querySelector(".warning");
     let ville = document.getElementsByTagName("select")[0].value;
     let pays = document.getElementsByTagName("select")[1].value;
 	  let nom = document.getElementsByTagName("input")[0].value;
@@ -24,21 +25,29 @@ document.addEventListener("DOMContentLoaded", () => {
     let btn = document.getElementsByTagName("input")[3];
 
 
-
 	let formContact = () => {
-    if (nom != "" && prenom != "" && email != "" && ville != "" && pays != "") {
-      kcorpWin.classList.add("reussi");
-			kcorpWin.innerText = "Formulaire bien envoyé";     
-		} else {
+
+    if(nom === "" || prenom === "" || email === "" || ville === "" || pays === "" ) {
+    
       kcorpWin.classList.add("erreur");
-			kcorpWin.innerText = "Champs incomplets, veuillez tous les remplir";			
+      kcorpWin.classList.remove("reussi");
+			kcorpWin.innerText = "Champs incomplets, veuillez tous les remplir";	 
+		} else {
+      kcorpWin.classList.add("reussi");
+      kcorpWin.classList.remove("erreur");
+			kcorpWin.innerText = "Formulaire bien envoyé";
+      		
 		}
+
+
 	};
 
   btn.addEventListener("click", e => {
 		e.preventDefault();
 		formContact();
 	});
+
+  
   
     
   

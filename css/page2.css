@@ -66,22 +66,24 @@ main form label{
     color: #0D0D0D;
 }
 
-main p{
-    display: block;
-
+main p {
+    display: none;
     width: 100%;
     margin: 0 auto;
     text-align: center;
     padding: 2rem;
+    margin-bottom: 2rem;
 
 }
 
 main .erreur{
+    display: block;
 	background-color: rgb(170, 17, 30);
 	color: #fff;
 }
 
 main .reussi{
+    display: block;
 	background-color: rgb(144, 146, 9);
 	color: #fff;
 }
