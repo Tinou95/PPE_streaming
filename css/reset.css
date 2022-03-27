@@ -52,11 +52,11 @@ img{
     transition: all 1s ease-in-out;
 }
 
-.form{
+.body main form{
     border: .1rem #0D0D0D solid;
 }
 
-.hache2{
+.body main section h2{
     color: #0D0D0D;
 }
 
