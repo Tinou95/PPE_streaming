@@ -15,8 +15,8 @@
     <title>Disney+</title>
 </head>
 <body>
-    <div class="loader">
-        <img src="asset/spinner-icon-gif-29.gif" alt="">
+    <div class="loader" id="loader" role="region" aria-labelledby="loader">
+        <img src="asset/spinner-icon-gif-29.gif" alt="spinner">
     </div>
     <header>
         <img class="image_header" src="./asset/disney_plus_icon_156735-removebg-preview.png" alt="disney_plus">
@@ -38,11 +38,11 @@
         
         <form method="post" action="page2.html">  
                 <p class="warning"></p>
-                <label for="text">Nom</label><input type="text" name="last_name" placeholder="Last Name" id="last_name" autofocus="true" required="true"><br>
-                <label for="text">Prenom</label><input type="text" name="first_name" placeholder="First Name" id="first_name" autofocus="true" required="true"><br>
-                <label for="mail">Votre e-mail</label><input type="email" name="mail" placeholder="Votre mail" id="mail" autofocus="true" required="true"><br>
+                <label for="last_name">Nom</label><input type="text" name="last_name" placeholder="Last Name" id="last_name" autofocus required><br>
+                <label for="first_name">Prenom</label><input type="text" name="first_name" placeholder="First Name" id="first_name" required><br>
+                <label for="mail">Votre e-mail</label><input type="email" name="mail" placeholder="Votre mail" id="mail"  required><br>
 
-                <label for="Ville-select">Ville</label> <br>
+                <label for="ville_select">Ville</label> <br>
                 <select name="ville" id="ville_select">
                     <option value="">Ville</option>
                     <option value="Londres">Londres</option>
@@ -53,7 +53,7 @@
                     <option value="Berlin">Berlin</option>
                 </select> <br>
 
-                <label for="Ville-select">Pays</label> <br>
+                <label for="pays_select">Pays</label> <br>
                 <select name="pays" id="pays_select">
                     <option value="">Pays</option>
                     <option value="Angleterre">Angleterre</option>
