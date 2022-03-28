@@ -62,10 +62,17 @@ img{
 
 .image_moon{
    content: url('../asset/moon.png');
+   transition: all 1s ease-in-out;
+   scale: 1.5;
 }
 .image_sunny{
     content: url('../asset/sunny.png');
+    transition: all 1s ease-in-out;
+    scale: 1.5;
 }
+
+
+
 
 
 

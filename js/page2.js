@@ -24,6 +24,11 @@ document.addEventListener("DOMContentLoaded", () => {
 	  let email = document.getElementsByTagName("input")[2].value;
     let btn = document.getElementsByTagName("input")[3];
 
+    
+
+
+ 
+
 
 	let formContact = () => {
 
@@ -33,6 +38,9 @@ document.addEventListener("DOMContentLoaded", () => {
       kcorpWin.classList.remove("reussi");
 			kcorpWin.innerText = "Champs incomplets, veuillez tous les remplir";	 
 		} else {
+
+
+
       kcorpWin.classList.add("reussi");
       kcorpWin.classList.remove("erreur");
 			kcorpWin.innerText = "Formulaire bien envoyé";
@@ -46,7 +54,6 @@ document.addEventListener("DOMContentLoaded", () => {
 		e.preventDefault();
 		formContact();
 	});
-
   
   
     
