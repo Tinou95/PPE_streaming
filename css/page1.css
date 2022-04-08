@@ -131,6 +131,7 @@ main section p{
     padding: 4rem;
     margin: 2rem 0 6rem 0;
     background-color: #91AAF2;
+    border-radius: .5rem;
 }
 
 main section ul{
@@ -190,6 +191,11 @@ main section button{
 }
 
 @media screen and (max-width: 40rem) {
+
+    main section ul{
+
+        grid-template-columns: repeat(2,1fr);
+    }
     main{
         width: 90vw;
     }

@@ -5,39 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Mon menu web">
-    <link rel="icon"  sizes="32x32" href="asset/disney_plus_icon_156735-removebg-preview.png">
+    <link rel="icon"  sizes="32x32" href="asset/logo_sport.png">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/page2.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/loader.css">
     
-    <title>Disney+</title>
+    <title>Sport+</title>
 </head>
 <body>
-    <div class="loader" id="loader" role="region" aria-labelledby="loader">
+    <div class="loader" id="loader" role="region" aria-label="chargement">
         <img src="asset/spinner-icon-gif-29.gif" alt="spinner">
     </div>
     <header>
-        <img class="image_header" src="./asset/disney_plus_icon_156735-removebg-preview.png" alt="disney_plus">
-        <h1>Film, séries TV et bien plus en illimité</h1>
+        <img class="image_header" src="./asset/logo_sport.png" alt="sport+">
+        <h1>Maison des ligues tous les sports</h1>
         <span class="image_header2 image_sunny"></span>
     </header>
     <main>
         <section>
-            <h2 class="first_hache">Films à la une</h2>
+            <h2 class="first_hache">Sport à la une</h2>
         <ul>
-            <li><img src="./asset/affiche/affiche_10.jpg" alt="ratatouille"></li>
-            <li><img src="./asset/affiche/affiche_11.jpg" alt="ralph"></li>
-            <li><img src="./asset/affiche/affiche_12.jpg" alt="arlo"></li>
-            <li><img src="./asset/affiche/affiche_13.jpg" alt="mickey"></li>
+            <li><img src="./asset/affiche/affiche_10.jpg" alt="skate"></li>
+            <li><img src="./asset/affiche/affiche_11.webp" alt="f1"></li>
+            <li><img src="./asset/affiche/affiche_12.webp" alt="motogp"></li>
+            <li><img src="./asset/affiche/affiche_13.jpg" alt="ski"></li>
 
         </ul>
         </section>
         
         
-        <form method="post" action="page2.html">  
-                <p class="warning"></p>
+        <form method="post" action="page2.html">
+            <fieldset>
+                <p class="warning">Remplir le formulaire ci dessous</p>
                 <label for="last_name">Nom</label><input type="text" name="last_name" placeholder="Last Name" id="last_name" autofocus required><br>
                 <label for="first_name">Prenom</label><input type="text" name="first_name" placeholder="First Name" id="first_name" required><br>
                 <label for="mail">Votre e-mail</label><input type="email" name="mail" placeholder="Votre mail" id="mail"  required><br>
@@ -64,13 +65,14 @@
                     <option value="Allemagne">Allemagne</option>
                 </select> <br>
 
-            <input type="submit" aria-label="Valider" value="Valider" >
-          </form>
+            <input id="submit" type="submit" aria-label="Valider" value="Valider" >
+          </fieldset>
+        </form>
         
     </main>
 
     <footer> 
-        <p>&copy;- Disney+  -2022</p>
+        <p>&copy;- Sport+  -2022</p>
     </footer>
   
 

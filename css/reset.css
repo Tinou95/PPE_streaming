@@ -32,12 +32,20 @@ button{
 }
 
 img{
-    display: inline-block;
+    display: block;
     height: auto;
     width: auto;
     object-fit: cover;
-    vertical-align: middle;
+    border-radius: .5rem;
 }
+
+/* header*/
+
+header img{
+    max-width: 20rem;
+}
+
+
 
 
 /*---js---*/
@@ -75,6 +83,8 @@ img{
     transition: all 1s ease-in-out;
     scale: 1.5;
 }
+
+
 
 
 
