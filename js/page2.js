@@ -27,14 +27,14 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     let leForm = () => {
 let ville = document.getElementsByTagName("select")[0].value;
-let pays = document.getElementsByTagName("select")[1].value;
 let nom = document.getElementsByTagName("input")[0].value;
 let prenom = document.getElementsByTagName("input")[1].value;
 let email = document.getElementsByTagName("input")[2].value;
+let age = document.getElementsByTagName("input")[3].value;
 
-console.log(nom, prenom, email, ville, pays);
+console.log(nom, prenom, email, ville, age);
 
-      if (!nom  || !prenom || !email || !ville  || !pays ) {
+      if (!nom  || !prenom || !email || !ville  || !age ) {
         el.innerText = "Veuillez remplir tous les champs ";
        el.style.backgroundColor = "red";
 
@@ -42,7 +42,7 @@ console.log(nom, prenom, email, ville, pays);
         el.innerText = "Votre formulaire a bien été envoyé";
         el.style.backgroundColor = "green";
 
-        localStorage.setItem("user", nom + " | " + prenom + " | " + email + " | " + ville + " | " + pays);
+        localStorage.setItem("user", nom + " | " + prenom + " | " + email + " | " + ville + " | " + age);
         sessionStorage.setItem("user", "sessionid");
   
       }

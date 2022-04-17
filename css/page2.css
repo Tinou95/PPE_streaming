@@ -46,7 +46,7 @@ main form input, main form select{
 }
 
 main form input:invalid{
-    border: 2px dashed red;
+    border: 2px solid red;
   }
   
  main form input:valid {

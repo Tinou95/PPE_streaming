@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de données : `ppe_straming`
+-- Base de données : `ppe_streaming`
 --
 
 -- --------------------------------------------------------
@@ -33,16 +33,16 @@ CREATE TABLE `registration` (
   `last_name` varchar(50) NOT NULL,
   `mail` varchar(50) NOT NULL,
   `ville` varchar(50) NOT NULL,
-  `pays` varchar(50) NOT NULL
+  `age` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Déchargement des données de la table `registration`
 --
 
-INSERT INTO `registration` (`ID`, `first_name`, `last_name`, `mail`, `ville`, `pays`) VALUES
-(1, 'Quentin', 'Andrieu', 'quentinandrieu@yahoo.com', 'Paris', 'France'),
-(2, 'Mark', 'Zukenberg', 'marc@gmail.com', 'Londres', 'Angleterre');
+INSERT INTO `registration` (`ID`, `first_name`, `last_name`, `mail`, `ville`, `age`) VALUES
+(1, 'Quentin', 'Andrieu', 'quentinandrieu@yahoo.com', 'Paris', '15'),
+(2, 'Mark', 'Zukenberg', 'marc@gmail.com', 'Londres', '18');
 
 --
 -- Index pour les tables déchargées
