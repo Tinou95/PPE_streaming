@@ -37,10 +37,12 @@ console.log(nom, prenom, email, ville, age);
       if (!nom  || !prenom || !email || !ville  || !age ) {
         el.innerText = "Veuillez remplir tous les champs ";
        el.style.backgroundColor = "red";
+       el.style.color = "white";
 
       } else {
         el.innerText = "Votre formulaire a bien été envoyé";
         el.style.backgroundColor = "green";
+        el.style.color = "white";
 
         localStorage.setItem("user", nom + " | " + prenom + " | " + email + " | " + ville + " | " + age);
         sessionStorage.setItem("user", "sessionid");
