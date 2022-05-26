@@ -1,6 +1,6 @@
 <?php 
     session_start();
-    require_once 'connect.php'; // ajout connexion bdd 
+    require_once './setup/connect.php'; // ajout connexion bdd 
    // si la session existe pas soit si l'on est pas connecté on redirige
    if(!isset($_SESSION['user'])){
     header('Location:page_nm.php');
@@ -46,9 +46,8 @@
 
 
         <section>
-            <h2>Bonjour <?php echo $data['pseudo']; ?> !</h2>
 
-            <h2>Prêt à la compétition? Remplissez le formulaire proposé dans cette page</h2>
+            <h2>Bonjour <span class="pseudo"><?php echo $data['pseudo']; ?> </span> ! Prêt à la compétition?</h2>
 
             <p>Tous les mois profitez de toutes les nouveautés et opportunités. A partir du mois
                 prochain on vous propose tous les sports et toutes les compétitions.
@@ -313,12 +312,12 @@
 
             </ul>
 
-            <a href="page_m2.php"><button class="redirect_page2">Cliquez ici pour commencer</button></a>
+            <a href="page_m2.php"><button class="redirect_page2">Voir les Sports à la une</button></a>
 
         </section>
 
         <section>
-            <a href="deconnexion.php"><h2>Deconnexion</h2></a>
+            <a href="./setup/deconnexion.php"><h2>Deconnexion</h2></a>
         </section>
 
         <!-- modale -->
