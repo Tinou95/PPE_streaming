@@ -1,5 +1,5 @@
 # Ancienne version sans PHP
-[Voir ancienne page](https://tinou95.github.io/PPE_streaming/PPE_sans_php/page1.html);
+[Voir ancienne page](https://tinou95.github.io/PPE_streaming/PPE_sans_php/page1.html)
 
 
 
