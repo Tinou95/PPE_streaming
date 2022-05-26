@@ -1,9 +1,9 @@
 # Ancienne version sans PHP
-[Voir ancienne page](https://tinou95.github.io/PPE_streaming/PPE_sans_php/page1.html) &gt;
+[Voir ancienne page](https://tinou95.github.io/PPE_streaming/PPE_sans_php/page1.html);
 
 
 
-# Nouvelle version avec php
+# Nouvelle version avec PHP
 
 ## Page inscription
 
