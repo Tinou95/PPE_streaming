@@ -20,7 +20,7 @@
     <div class="loader" id="loader" role="region" aria-label="chargement">
         <img src="asset/spinner-icon-gif-29.gif" alt="spinner">
     </div>
-    <?php require_once './header_footer/header_page_nm.php'; ?>
+    <?php require_once './header_footer/header_page_m.php'; ?>
     <main>
 
 
