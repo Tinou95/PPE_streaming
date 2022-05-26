@@ -12,3 +12,11 @@
 ## Page connexion
 
 ![Image WebSite](./capture_projet/page_connecter.PNG)
+
+## Page accueil
+
+![Image WebSite](./capture_projet/page_accueil.PNG)
+
+## Page2 avec formulaire inscription
+
+![Image WebSite](./capture_projet/page_accueil2_inscription.PNG)
