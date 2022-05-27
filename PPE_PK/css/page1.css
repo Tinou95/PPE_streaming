@@ -35,8 +35,8 @@ section ul figure:hover figcaption{
     display: block;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: auto;
     background-color: rgba(0,0,0,0.5);
     opacity: 0;
     z-index: -1;
@@ -66,6 +66,16 @@ section ul figure:hover figcaption{
     background-color: #fff;
     color: #222;
     
+}
+.parent-modale .modale .desc input{
+
+    display: block;
+    margin: 2rem auto;
+    padding: 1rem;
+    width: 20%;
+    background-color: #222;
+    color: #fff;
+   
 }
 .modale-active{
     z-index: 1;
@@ -191,10 +201,10 @@ main section a h2{
         
     }
 
-    .parent-modale .modale{
-        min-width: 30rem;
+     .parent-modale .modale{
+        min-width:  35rem;
+} 
 
-    }
 
 
     main section button{

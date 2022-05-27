@@ -19,6 +19,14 @@ image_header2.addEventListener("click", () => {
 });
 
 
+
+// participer input
+
+
+
+// Modal
+
+
 let el, modal, closed, open_modal, closed_all;
 
 el = document.querySelectorAll(".grid-picture-large li");
@@ -36,12 +44,13 @@ open_modal = function () {
     modal.classList.add("modale-active");
     document.querySelector(".modale img").setAttribute("src", image);
     document.querySelector(".modale .desc h3").innerText = title;
-    document.querySelector(".modale .desc p").innerHTML = `<strong>Déscription : </strong>${desc}`;
-    document.querySelector(".modale .desc time").innerText = `Année : ${dates}`;
+    document.querySelector(".modale .desc p").innerHTML = `<strong>Description : </strong>${desc}`;
+    document.querySelector(".modale .desc time").innerHTML = `<strong> Date ajout : </strong> ${dates}`;
     document.querySelector(".modale .desc time").setAttribute("datetime", dates);
 };
 for (rows of el) {
     rows.addEventListener("click", open_modal);
+    
 }
 closed.addEventListener("click", () => {
     modal.classList.remove("modale-active");
