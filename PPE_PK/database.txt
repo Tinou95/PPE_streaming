@@ -1,3 +1,5 @@
+/* UTILISATEURS */
+
 DROP TABLE IF EXISTS `utlisateurs`;
 CREATE TABLE `utilisateurs` (
   `id` int(11) NOT NULL,
@@ -7,37 +9,21 @@ CREATE TABLE `utilisateurs` (
   `date_inscription` datetime NOT NULL DEFAULT current_timestamp()
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
---
--- Déchargement des données de la table `utilisateurs`
---
 
 INSERT INTO `utilisateurs` (`id`, `pseudo`, `email`, `password`, `date_inscription`) VALUES
 (6, 'lefortnite', 'lefortnite@gmail.com', '$2y$12$fVaRahdePoPs.KMaHrJgyu3Pdjoz8l2Q844h/2uVIuSHFkz/6bvBm', '2022-05-27 19:59:18');
 
---
--- Index pour les tables déchargées
---
 
---
--- Index pour la table `utilisateurs`
---
 ALTER TABLE `utilisateurs`
   ADD PRIMARY KEY (`id`);
 
---
--- AUTO_INCREMENT pour les tables déchargées
---
 
---
--- AUTO_INCREMENT pour la table `utilisateurs`
---
 ALTER TABLE `utilisateurs`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 
-
-
+/* EVENEMENT */
 
 DROP TABLE IF EXISTS `evenement`;
 CREATE TABLE IF NOT EXISTS `evenement` (
@@ -49,9 +35,7 @@ CREATE TABLE IF NOT EXISTS `evenement` (
   `image` varchar(48) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Déchargement des données de la table `evenement`
---
+
 
 INSERT INTO `evenement` (`id`, `nom`, `desc`, `date_creation`, `date_modification`, `image`) VALUES
 (1, 'Football américain', 'Le football américain est un sport collectif opposant deux équipes de onze joueurs qui alternent entre la défense et l\'attaque', '2022-05-26 23:22:47', '2022-05-26 23:22:47', './asset/affiche/affiche_1.jpg'),
@@ -69,4 +53,26 @@ INSERT INTO `evenement` (`id`, `nom`, `desc`, `date_creation`, `date_modificatio
 (13, 'Ski alpin', 'Le ski alpin est un ensemble de disciplines du ski qui se pratiquent dans un contexte de loisirs ou de compétition.', '2022-05-26 23:24:44', '2022-05-26 23:24:44', './asset/affiche/affiche_13.jpg'),
 (14, 'Athlétisme', 'L’athlétisme est un ensemble d’épreuves sportives codifiées comprenant les courses, sauts, lancers, épreuves combinées et marche.', '2022-05-26 23:24:52', '2022-05-26 23:24:52', './asset/affiche/affiche_14.jpg'),
 (15, 'Tennis', 'Le tennis est un sport de raquette qui oppose soit deux joueurs soit quatre joueurs qui forment deux équipes de deux.', '2022-05-26 23:24:59', '2022-05-26 23:24:59', './asset/affiche/affiche_15.jpg');
+
+
+
+/* HISTORIQUE CLIENT */
+
+DROP TABLE IF EXISTS `historique_client`;
+CREATE TABLE `historique_client` (
+  `id_utilisateur` int(11) NOT NULL,
+  `id_evenement` int(11) NOT NULL,
+  `date_consultation` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+ALTER TABLE `historique_client`
+  ADD PRIMARY KEY (`date_consultation`),
+  ADD KEY `id_client` (`id_utilisateur`),
+  ADD KEY `id_evenement` (`id_evenement`);
+
+
+ALTER TABLE `historique_client`
+  ADD CONSTRAINT `historique_client_ibfk_2` FOREIGN KEY (`id_evenement`) REFERENCES `evenement` (`id`);
+COMMIT;
 
