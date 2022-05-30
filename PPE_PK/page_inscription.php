@@ -24,8 +24,7 @@
     <main>
 
         <?php require_once './error_alert/reg_error.php'; ?>
-
-           
+      
            <form action="./setup/inscription_traitement.php" method="post">
                
                <fieldset>
@@ -40,12 +39,8 @@
                 </fieldset>
                 
            </form>
-           
- 
-
 
     </main>
-
 
 
     <?php include_once './header_footer/footer.php'; ?>

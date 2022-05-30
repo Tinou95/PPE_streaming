@@ -36,12 +36,16 @@
 </head>
 
 <body>
-
+<!-- 
     <div role="region" aria-label="chargement" class="loader" id="loader">
         <img src="asset/spinner-icon-gif-29.gif" alt="">
-    </div>
+    </div> -->
     
-    <?php include_once './header_footer/header_page_m.php'; ?>
+    <?php include_once './header_footer/header_page_m.php'; 
+    
+    print($data['id']) ;
+
+    ?>
     <main>
 
 
@@ -65,7 +69,8 @@
     ?>
                 <li data-image="<?php echo htmlspecialchars($donnees['image']); ?>" data-title="<?php echo htmlspecialchars($donnees['nom']); ?>"
                     data-description="<?php echo htmlspecialchars($donnees['desc']); ?>"
-                    data-dates="<?php echo htmlspecialchars($donnees['date_modification']); ?>">
+                    data-dates="<?php echo htmlspecialchars($donnees['date_modification']); ?>"
+                    data-id="<?php echo htmlspecialchars($donnees['id']); ?>">
                     <figure>
                         <img src="<?php echo htmlspecialchars($donnees['image']); ?>" alt="<?php echo htmlspecialchars($donnees['nom']); ?>">
                         <figcaption>
@@ -79,8 +84,6 @@
     $request->closeCursor(); // Fin de requète SQL
 
     ?>
-
-
             </ul>
 
             <a href="page_m2.php"><button class="redirect_page2">Voir les Sports à la une</button></a>
@@ -90,6 +93,19 @@
         <section>
             <a href="./setup/deconnexion.php"><h2>Deconnexion</h2></a>
         </section>
+
+
+        <section class="userInfo">
+            <h2>Information</h2>
+            <?php include_once "./setup/utilisateur_inc.php" ?>
+            <a href="#">Voir l'historique des évenements</a>    
+            <?php include_once "./setup/listevent_inc.php" ?>    
+            
+        </section>
+
+
+
+
 
         <!-- modale -->
         <div class="parent-modale" role="dialog" aria-label="true">
@@ -102,7 +118,10 @@
                     <h3>title</h3>
                     <p> </p>
                     <time></time> <br>
+                    <form method="post">
                     <input type="submit" value="Participer">
+                    </form>
+
                 </figcaption>
             
             </figure>
