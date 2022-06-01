@@ -56,7 +56,8 @@ open_modal = function () {
     btn.addEventListener("click", (e) => {
         e.preventDefault();
         let stateObj = { id: "100" };
-        window.history.pushState(stateObj, "PPE_WEB", "/PPE_PK/page_m.php?id_evenement=" + id);
+        // window.history.pushState(stateObj, "PPE_WEB", "/PPE_PK/page_m.php?id_evenement=" + id);
+        window.history.pushState(stateObj, "PPE_WEB", "/PPE_streaming/PPE_PK/page_m.php?id_evenement=" + id);
     });
 
 };
