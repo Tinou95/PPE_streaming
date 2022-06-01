@@ -42,8 +42,6 @@
     </div> -->
     
     <?php include_once './header_footer/header_page_m.php'; 
-    
-    print($data['id']) ;
 
     ?>
     <main>
@@ -95,13 +93,13 @@
         </section>
 
 
-        <section class="userInfo">
+        <!-- <section class="userInfo">
             <h2>Information</h2>
             <?php include_once "./setup/utilisateur_inc.php" ?>
             <a href="#">Voir l'historique des évenements</a>    
             <?php include_once "./setup/listevent_inc.php" ?>    
             
-        </section>
+        </section> -->
 
 
 
