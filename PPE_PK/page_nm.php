@@ -23,9 +23,9 @@
 
 <body>
 
-     <div role="region" aria-label="chargement" class="loader" id="loader">
+     <!-- <div role="region" aria-label="chargement" class="loader" id="loader">
         <img src="asset/spinner-icon-gif-29.gif" alt="">
-    </div>
+    </div> -->
     <?php include_once './header_footer/header_page_nm.php'; ?>
     <main>
 
