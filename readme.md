@@ -8,6 +8,13 @@ Cette situation professionnelle est réalisée dans le contexte de la M2L ou Mai
 
 Le site web présenté ici a pour fonctionnalité globale la possibilité de s’inscrire et de se connecter en créant une session et stocker les informations du client sur la base de données. Il est aussi possible, une fois connecté, de s’inscrire à un des événements de sport présenté sur la page, cette inscription sera enregistrée et invisible par le client, l’information sera également stockée sur la base de données. Cette interface sera décrite ici sous forme de manuel d'utilisation de la page.
 
+### Page accueil
+
+![Image WebSite](./capture_projet/page_accueil.PNG)
+
+### Page avec formulaire inscription
+
+![Image WebSite](./capture_projet/page_accueil2_inscription.PNG)
 
 ### Page inscription
 
@@ -17,13 +24,10 @@ Le site web présenté ici a pour fonctionnalité globale la possibilité de s�
 
 ![Image WebSite](./capture_projet/page_connecter.PNG)
 
-### Page accueil
+### Page d'inscription à un évenement
 
-![Image WebSite](./capture_projet/page_accueil.PNG)
+![Image WebSite](./capture_projet/evenement_inscription.PNG)
 
-### Page2 avec formulaire inscription
-
-![Image WebSite](./capture_projet/page_accueil2_inscription.PNG)
 
 #### Ancienne version sans PHP
 [Voir ancienne page](https://tinou95.github.io/PPE_streaming/PPE_sans_php/page1.html) &gt;
