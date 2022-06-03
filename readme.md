@@ -28,6 +28,10 @@ Le site web présenté ici a pour fonctionnalité globale la possibilité de s�
 
 ![Image WebSite](./capture_projet/evenement_inscription.png)
 
+### Modèle relationnel de données
+
+![Image WebSite](./capture_projet/mcd_apweb.PNG)
+
 
 #### Ancienne version sans PHP
 [Voir ancienne page](https://tinou95.github.io/PPE_streaming/PPE_sans_php/page1.html) &gt;
