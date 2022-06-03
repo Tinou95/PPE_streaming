@@ -26,7 +26,7 @@ Le site web présenté ici a pour fonctionnalité globale la possibilité de s�
 
 ### Page d'inscription à un évenement
 
-![Image WebSite](./capture_projet/evenement_inscription.PNG)
+![Image WebSite](./capture_projet/evenement_inscription.png)
 
 
 #### Ancienne version sans PHP
