@@ -88,18 +88,20 @@
 
         </section>
 
-        <section>
-            <a href="./setup/deconnexion.php"><h2>Deconnexion</h2></a>
-        </section>
-
 
         <!-- <section class="userInfo">
             <h2>Information</h2>
             <?php include_once "./setup/utilisateur_inc.php" ?>
-            <a href="#">Voir l'historique des évenements</a>    
+            <a href="#">Voir l'historique des évenements</a>    -->
             <?php include_once "./setup/listevent_inc.php" ?>    
             
-        </section> -->
+        </section> 
+
+
+        <section>
+            <a href="./setup/deconnexion.php"><h2>Deconnexion</h2></a>
+        </section>
+
 
 
 
